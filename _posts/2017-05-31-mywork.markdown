@@ -1,0 +1,59 @@
+---
+layout:     post
+title:      "python——正则表达式"
+subtitle:   ""
+date:       2017-05-31 12:00:00
+author:     "lzx"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+    - python
+---
+
+
+
+> 本文来自python 核心编程
+
+
+## python正则表达式使用
+## match
+
+		import re
+		m=re.match('foo','food is very good')
+		if m is not None:
+    		print(m.group())
+
+ 实例说明：
+      food is very good-----foo
+      zhe food is very good----不输出，打印m为None
+	
+** match从开始位置进行匹配
+##search
+   		import re
+		m=re.search('foo','the food is very good')
+		if m is not None:
+    		print(m.group())
+ 实例说明：
+       the food is very good----foo
+
+** search 从左到右搜索
+##findall
+		import re
+		m = re.findall('foo','seafood is food')
+		print(m)
+ 实例说明：
+         seafood is food-- ['foo', 'foo']
+** findall 返回一个列表，如果不匹配返回空列表
+##finditer
+		import re
+		s = 'this is that'
+		m = re.findall('foo',s)
+		it=re.finditer(r'(th\w+)',s,re.I)
+		for x in it:
+ 			print(x.group())
+##sub
+
+
+
+       
