@@ -15,11 +15,11 @@ tags:
 
 > 本文来自htmlParse 2.0 api
 
-##NodeFilter
+## NodeFilter
 
 >节点过滤
 
-###实现接口的类
+### 实现接口的类
 
 	AndFilter, AndFilterWrapper, CssSelectorNodeFilter, Filter, HasAttributeFilter, 
 	HasAttributeFilterWrapper, HasChildFilter, HasChildFilterWrapper, 
@@ -28,11 +28,11 @@ tags:
 	IsEqualFilter, LinkRegexFilter, 
 	LinkStringFilter, NodeClassFilter, NodeClassFilterWrapper, NotFilter, NotFilterWrapper, OrFilter, OrFilterWrapper, RegexFilter,
 	RegexFilterWrapper, StringFilter, StringFilterWrapper, TagNameFilter, TagNameFilterWrapper 
-##Node
+## Node
 
 >节点
 
-###实现接口的类
+### 实现接口的类
 
 	AbstractNode, AppletTag, BaseHrefTag, BodyTag, Bullet, BulletList, CompositeTag, DefinitionList,
 	DefinitionListBullet, Div, DoctypeTag, 
@@ -41,18 +41,18 @@ tags:
 	ScriptTag, SelectTag, Span, StyleTag, TableColumn, TableHeader, TableRow, TableTag, TagNode,
 	TextareaTag, TextNode, TitleTag
 
-###返回String的方法
+### 返回String的方法
 
 	getText()====div class="banner"
 	toHtml(true)====<div class="banner"><div class="container"><ul class="channelList"><li>首页二手房新房租房旅居地产海外</li></ul></div>
 	toHtml(false)====<div class="banner"><div class="container"><ul class="channelList"><li>首页二手房新房租房旅居地产海外</li></ul></div>
 	toPlainTextString()====首页二手房新房租房旅居地产海外
 
-##Parse
+## Parse
 
 >节点解析类
 
-###常用方法
+### 常用方法
 
 	Parser(String resource)
 	Parser(URLConnection connection)
@@ -61,11 +61,11 @@ tags:
 	elements() 
 	parse(NodeFilter filter) 
 	>>>以上得到NodeList
-##Tag
+## Tag
 
 >Node的子接口
 
-###实现接口类
+### 实现接口类
 
 	AppletTag, BaseHrefTag, BodyTag, Bullet, BulletList, CompositeTag, DefinitionList,
 	DefinitionListBullet, Div, DoctypeTag, FormTag, FrameSetTag, FrameTag, HeadingTag,
@@ -73,11 +73,11 @@ tags:
 	OptionTag, ParagraphTag, ProcessingInstructionTag, ScriptTag, SelectTag, Span,
 	StyleTag, TableColumn, TableHeader, TableRow, TableTag, TagNode, TextareaTag, TitleTag
 
-##Text
+## Text
 
 >Node的子接口
 
-###实现接口类
+### 实现接口类
 
 	TextNode
 
